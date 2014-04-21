@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import ua.com.amadeuusoft.imageloaders.BenchmarkApplication;
 import ua.com.amadeuusoft.imageloaders.adapters.BaseBenchmarkAdapter;
 
 /**
@@ -36,7 +37,7 @@ public abstract class ImageLoaderBenchmark {
     private Timer scrollTimer = new Timer();
     private Debug.MemoryInfo memoryInfo;
 
-    private List<Double> usedMemoryCollector = new ArrayList<Double>();
+    private List<Float> usedMemoryCollector = new ArrayList<Float>();
 
     public ImageLoaderBenchmark(GridView gridView) {
         if (gridView == null)
@@ -51,7 +52,6 @@ public abstract class ImageLoaderBenchmark {
         direction = Direction.DOWN;
         scrollTimer.schedule(new ScrollTimerTask(), NEXT_SCROLL_DELAY, NEXT_SCROLL_DELAY);
     }
-
     ;
 
     protected void resetBenchmark() {
@@ -98,10 +98,10 @@ public abstract class ImageLoaderBenchmark {
         usedMemoryCollector.add(getTotalUsedMemory());
     }
 
-    protected double getTotalUsedMemory() {
+    protected float getTotalUsedMemory() {
         double usedMemory = memoryInfo.getTotalPss();
-        double memoryInMb = usedMemory / 1024;
-        memoryInMb = Math.round(memoryInMb * Math.pow(10, 2)) / Math.pow(10, 2);//round value
+        float memoryInMb = (float) (usedMemory / 1024);
+        memoryInMb = (float) (Math.round(memoryInMb * Math.pow(10, 2)) / Math.pow(10, 2));//round value
         return memoryInMb;
     }
 
@@ -109,17 +109,17 @@ public abstract class ImageLoaderBenchmark {
         scrollTimer.cancel();
         StringBuilder builder = new StringBuilder();
         builder.append("used memory by steps: ");
-        for (Double memorySize : usedMemoryCollector) {
+        for (Float memorySize : usedMemoryCollector) {
             builder.append(memorySize).append(" ");
         }
         builder.deleteCharAt(builder.length() - 1);
         Log.d(TAG, builder.toString().replace('.', ','));
-    }
-
-    public void setSelectionStepSize(int selectionStepSize) {
-        this.selectionStepSize = selectionStepSize;
+        BenchmarkResult result = new BenchmarkResult(getBenchmarkName(), usedMemoryCollector);
+        BenchmarkApplication application = (BenchmarkApplication) gridView.getContext().getApplicationContext();
+        application.getBenchmarkDAO().storeBenchmarkResult(result);
     }
 
     protected abstract BaseBenchmarkAdapter createBenchmarkAdapter(Context context);
+    protected abstract String getBenchmarkName();
 
 }

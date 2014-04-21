@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Scale.Text.Size">12sp</dimen>
+    <dimen name="Scale.Line.Width">2dp</dimen>
+    <dimen name="Scale.Degree.Line.Width">10dp</dimen>
+    <dimen name="Scale.Padding.Left">20dp</dimen>
+</resources>

@@ -9,6 +9,8 @@
           <set>
             <option value="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest" />
             <option value="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\BenchmarkModule" />
+            <option value="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\glide" />
+            <option value="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\volley" />
           </set>
         </option>
       </GradleProjectSettings>

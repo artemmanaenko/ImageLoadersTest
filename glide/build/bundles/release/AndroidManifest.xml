@@ -1,0 +1,4 @@
+<!-- From: file:/D:/AndroidS/AmadeusSoft/Habr/ImageLoadersTest/glide/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="4" android:versionName="2.0.2" package="com.bumptech.glide">
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19"/>
+  <application/>
+</manifest>

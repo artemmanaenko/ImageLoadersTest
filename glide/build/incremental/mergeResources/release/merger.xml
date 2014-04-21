@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="unspecified" >
+        <source path="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\glide\build\exploded-aar\ImageLoadersTest\volley\unspecified\res" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\glide\res" />
+        <source path="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\glide\build\res\rs\release" />
+        <source path="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\glide\build\res\generated\release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="D:\AndroidS\AmadeusSoft\Habr\ImageLoadersTest\glide\src\release\res" />
+    </dataSet>
+
+</merger>

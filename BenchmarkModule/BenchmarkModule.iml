@@ -71,9 +71,15 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="picasso-2.1.1" level="project" />
+    <orderEntry type="library" exported="" name="eventbus-2.2.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="android-query.0.26.7" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="GraphView-3.1.1" level="project" />
+    <orderEntry type="library" exported="" name="disklrucache-2.0.2" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.0" level="project" />
+    <orderEntry type="module" module-name="volley" exported="" />
+    <orderEntry type="module" module-name="glide" exported="" />
   </component>
 </module>
 

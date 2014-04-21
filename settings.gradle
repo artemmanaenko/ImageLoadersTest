@@ -1,1 +1,3 @@
 include 'BenchmarkModule'
+include 'volley'
+include 'glide'

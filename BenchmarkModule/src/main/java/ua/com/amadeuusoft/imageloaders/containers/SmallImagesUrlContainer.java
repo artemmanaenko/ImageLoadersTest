@@ -62,7 +62,7 @@ public class SmallImagesUrlContainer implements IUrlListContainer {
         smallImagesList.add("http://www.animashka.info/_ph/123/2/791953463.jpg");
         smallImagesList.add("http://namepics.ru/pics_max/np_30.jpg");
         smallImagesList.add("http://s017.radikal.ru/i429/1402/67/16780537ed32.jpg");
-        smallImagesList.add(" http://90ie.ru/wp-content/uploads/2008/10/cluelss.jpg");
+        smallImagesList.add("http://90ie.ru/wp-content/uploads/2008/10/cluelss.jpg");
 
         smallImagesList.add("http://kartinkina.ru/images/joomgallery/thumbnails/apple_27/__ipad_29/_32/abstract_ipad_20120402_1155257996.jpg");
         smallImagesList.add("http://www.millionpodarkov.ru/podelki/wp-content/uploads/2011/02/P1070276.JPG");

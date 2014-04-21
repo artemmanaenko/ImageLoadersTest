@@ -9,7 +9,7 @@ import android.widget.ListAdapter;
 
 import java.util.List;
 
-import ua.com.amadeuusoft.imageloaders.SquareImageView;
+import ua.com.amadeuusoft.imageloaders.ui.widgets.SquareImageView;
 import ua.com.amadeuusoft.imageloaders.containers.IUrlListContainer;
 
 /**
